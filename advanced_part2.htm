@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML advanced 02</title>
+  </head>
+  <body>
+    <h3>Forms - Advanced</h3>
+
+    <ul>
+      <li>Fieldset to group inputs; legend tag to name the group</li>
+    </ul>
+    <form>
+      <fieldset>
+        <legend>Name</legend>
+        <p>First name <input name="firstName" /></p>
+        <p>Last name <input name="lastName" /></p>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <p>Address <textarea name="address"></textarea></p>
+        <p>Postal code <input name="postcode" /></p>
+      </fieldset>
+      <p>Country(Option group)</p>
+      <h6>The optgroup element groups options in a select box.</h6>
+      <select name="country">
+        <optgroup label="Africa">
+          <option value="gam">Gambia</option>
+          <option value="mad">Madagascar</option>
+          <option value="nam">Namibia</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="fra">France</option>
+          <option value="rus">Russia</option>
+          <option value="uk">UK</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="can">Canada</option>
+          <option value="mex">Mexico</option>
+          <option value="usa">USA</option>
+        </optgroup></select
+      ><br />
+      <h6>navigate without the use of a pointing device</h6>
+      <p>
+        Navigate to here using tab key/ Alt+X <br />
+        <label for="nickname">Nickname</label>
+        <input id="nickname" name="nickname" accesskey="x" tabindex="1" />
+      </p>
+
+      <hr />
+      <hr />
+      <hr />
+      <h3>Forms: Datalist</h3>
+      <h6>list of suggestions that accompanies a text field</h6>
+      <label>Country</label>
+      <input name="country" list="country_name" autofocus />
+      <datalist id="country_name">
+        <option value="Afghanistan"></option>
+        <option value="Albania"></option>
+        <option value="Algeria"></option>
+        <option value="Andorra"></option>
+        <option value="Armenia"></option>
+        <option value="Australia"></option>
+        <option value="Austria"></option>
+        <option value="Azerbaijan"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
