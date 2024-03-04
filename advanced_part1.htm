@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .alternative {
+        background-color: rgb(173, 135, 135);
+        /
+      }
+    </style>
+    <title>Advanced HTML</title>
+  </head>
+  <body>
+    <h1>Time tag</h1>
+    <p>
+      The datetime attribute of this element is used translate the time into a
+      machine-readable format so that browsers can offer to add date reminders
+      through the user's calendar, and search engines can produce smarter search
+      results.
+    </p>
+
+    <span>
+      Written by Doctor Hume on -
+      <time datetime="2052-11-21" title="time tag used with datetime attribute"
+        >Thursday 21st November 2052</time
+      >.
+    </span>
+    <h1>Conditional Comments</h1>
+    <textarea disabled cols="80" rows="10">
+        Downlevel-hidden - Used to hide HTML source code in browser
+       <!--[if lte IE 8]>
+      <link href="sample.css" rel="stylesheet">
+      <![endif]-->
+        Downlevel-revealed - Used to expose HTML source code in browser
+        <![if !IE]>
+        <p>This message can be seen, if your browser is not IE </p>
+        <![endif]>
+      </textarea
+    >
+    <!--[if lte IE 8]>
+      <link href="sample.css" rel="stylesheet" />
+    <![endif]-->
+
+    <![if IE]>
+    <p>This message can be seen, if your browser is not IE</p>
+    <![endif]>
+
+    <h1>Table</h1>
+    <table>
+      <caption>
+        Table Header
+      </caption>
+      <colgroup>
+        <col />
+        <col span="2" class="alternative" />
+        <!-- <col> -->
+      </colgroup>
+      <tr>
+        <td>This</td>
+        <td>That</td>
+        <td>The other</td>
+      </tr>
+      <tr>
+        <td>Ladybird</td>
+        <td>Locust</td>
+        <td>Lunch</td>
+      </tr>
+    </table>
+    <!-- &lt; -->
+  </body>
+</html>
